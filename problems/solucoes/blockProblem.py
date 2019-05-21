@@ -1,8 +1,6 @@
-
 import numpy as np
 
 blockWorld = {}
-
 blockLocation = []
 
 def initializeBlockWorld(n):
