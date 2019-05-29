@@ -10,17 +10,17 @@ def isJolly(array):
 		try:
 			auxArray[diff-1]+=1
 		except IndexError:
-			pass				
-	
+			pass
+
 	jolly = True
-	
+
 	for i in range(0,len(auxArray)):
 
 		if auxArray[i]!=1:
-			jolly = False	
-			break	
+			jolly = False
+			break
 
-	if jolly:		
+	if jolly:
 		print("Jolly")
 	else:
 		print("Not Jolly")
@@ -32,7 +32,7 @@ def main():
 			entry = input()
 		except EOFError:
 			break
-			
+
 		aux = entry.split(" ")
 		aux = [int(i) for i in aux]
 

@@ -4,7 +4,7 @@ def ComputeAngle(hour,minute):
 
 	angleA = (hour+minute/60)*30
 	angleB = minute*6
-	
+
 	if angleA > angleB:
 		output = angleA - angleB
 	else:
@@ -18,9 +18,7 @@ def ComputeAngle(hour,minute):
 while True:
 	try:
 		entry = input()
-
 		aux = entry.split(":")
-
 		hour = int(aux[0])
 		minute = int(aux[1])
 
@@ -35,5 +33,5 @@ while True:
 	else:
 		if minute==0 and hour==0:
 			break
-		print("{:.3f".format(ComputeAngle(hour,minute)))	
-		
+		print("{:.3f".format(ComputeAngle(hour,minute)))
+
